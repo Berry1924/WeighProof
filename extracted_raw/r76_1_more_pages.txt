@@ -1,0 +1,185 @@
+=== PAGE 92 ===
+OIML R 76-1: 2006 (E) 
+ 
+A.4.7.5 Eccentricity tests for mobile instruments 
+A.4.7 and A.4.7.1 to A.4.7.4 should be applied as far as these points are applicable. If not, the 
+positions of the test loads during this test have to be defined according to the operational conditions of 
+use. 
+A.4.8 Discrimination test (3.8) 
+The following tests shall be performed with three different loads, e.g. Min, ½ Max and Max. 
+A.4.8.1 Non-self-indication and analog indication 
+An extra load, but not less than 1 mg, shall be pl aced gently on or removed from the load receptor 
+while the instrument is at equilibrium. For certain extra load the equilibri um mechanism shall assume 
+a different position of equilibrium, as specified. 
+A.4.8.2 Digital indication 
+This test applies only to type examination and to instruments with d ≥ 5 mg. 
+A load plus sufficient additional weights (say 10 times 1/10 d) shall be placed on the load receptor. 
+The additional weights shall then be removed successively until the indication, I, is decreased 
+unambiguously by one actual scale interval, I – d . One of the additional weights shall be placed back 
+on the load receptor and a load equal to 1.4 d shall then be gently placed on the load receptor and give 
+a result increased by one actual scale interval above the initial indication, I + d . See example in 
+Figure 10. 
+Figure 10 – Instrument with d = 10 g 
+ 
+The indication at the start is I = 200 g. 
+Remove additional weights until the indication changes to I – d = 190 g. 
+Add 1/10 d = 1 g and thereafter 1.4 d = 14 g. 
+The indication shall then be I + d = 210 g. 
+A.4.9 Sensitivity of a non-self-indicating instrument (6.1) 
+During this test the instrument shall oscillate normally, and an extra load equal to the value of the mpe 
+for the applied load, but not less than 1 mg, shall be placed on the instrument while the load receptor is 
+still oscillating. For damped instruments the extra load shall be applied with a slight impact. The linear 
+distance between the middle points of this reading and the reading without the extra load shall be 
+taken as the permanent displacement of the indication. The test shall be performed with a minimum of 
+two different loads (e.g. zero and Max). 
+ 
+92 
+ 
+
+=== PAGE 93 ===
+OIML R 76-1: 2006 (E) 
+ 
+A.4.10 Repeatability test (3.6.1) 
+For type approval two series of weighings shall be performed, one with a load of about 50 % and one 
+with a load close to 100 % of Max. For instru ments with Max less than 1 000 kg each series shall 
+consist of 10 weighings. In other cases each series shall consist of at least 3 weighings. Readings shall 
+be taken when the instrument is loaded, and when the unloaded instru ment has come to rest between 
+weighings. In the case of a zero deviation between th e weighings, the instrument shall be reset to zero, 
+without determining the error at zero. The true zero position need not be determined between the 
+weighings. 
+If the instrument is provided with automatic zero- setting or zero-tracking, it shall be in operation 
+during the test. 
+For verification one series of weighings with about 0.8 Max is sufficient. Three weighings on classes 
+III and IIII or six weighings on classes I and II are necessary. 
+A.4.11 Variation of indication with time (for instruments of classes II, III or IIII only) 
+A.4.11.1 Creep test (3.9.4.1) 
+Load the instrument close to Max. Take one read ing as soon as the indication has stabilized and then 
+note the indication while the load remains on the instrument for a period of four hours. During this test 
+the temperature should not vary more than 2 °C. 
+The test may be terminated after 30 minutes if the indication differs less than 0.5 e during the first 
+30 minutes and the difference between 15 and 30 minutes is less than 0.2 e. 
+A.4.11.2 Zero return test (3.9.4.2) 
+The deviation in the zero indication before and after a period of loading with a load close to Max for 
+half an hour, shall be determined. The reading shall be taken as soon as the indication has stabilized. 
+For multiple range instruments, continue to read  the zero indication during the following 5 minutes 
+after the indication has stabilized. 
+If the instrument is provided with automatic zero-setting or zero-tracking, it shall not be in operation. 
+A.4.12 Test for the stability of equilibrium (4.4.2) 
+Check the documentation of the manufacturer, whethe r the following stable equilibrium functions are 
+described in detail and sufficiently: 
+ the basic principle, the function and the criteria for stable equilibrium; 
+ all adjustable and not adjustable parameters of  the stable equilibrium function (time interval, 
+number of measuring cycles, etc.); 
+ securing of these parameters; and 
+ definition of the most critical adjustment of the stable equilibrium (worst case). This shall 
+cover all variants of a type. 
+Test the stable equilibrium with the most critical adjustment (worst case) and check that printing (or 
+storing) is not possible when stable equilibrium is not yet reached. 
+Check that, under continuous disturbance of the equilibrium, no functions can be performed which 
+require stable equilibrium, e.g. printing, storing, zero or tare operations. 
+Load the instrument up to 50 % of Max or up to a load included in the range of operation of the 
+relevant function. Manually disturb the equilibrium  by one single action and initiate the command for 
+printing, data storage, or other function, as soon as possible. In the case of printing or data storage, 
+read the indicated value over a period of 5 sec onds following print-out. Stable equilibrium is 
+considered to be achieved when no more than tw o adjacent values are indicated, one of which being 
+ 
+93 
+ 
+
+=== PAGE 94 ===
+OIML R 76-1: 2006 (E) 
+ 
+the printed value. For instruments with differen tiated scale divisions, this paragraph applies to e rather 
+than to d. 
+In the case of zero-setting or tare balancing, check the accuracy according to A.4.2.3/A.4.6.2. Perform 
+the test 5 times. 
+In case of vehicle-mounted, vehicle-incorporated or mobile instruments, tests have to be performed 
+with a known operational test load, the instrument be ing in motion to ensure either that the stability 
+criteria inhibit any weighing operatio n or that the stable equilibrium criteria of 4.4.2 are met. In case 
+the instrument can be used to weigh liquid produ cts in a vehicle, tests should be performed in 
+conditions where the vehicle is stopped just before testing so that either the stability criteria inhibit any 
+weighing operation or that the stable equilibrium criteria of 4.4.2 are met. 
+A.4.13 Additional tests for portable weighbridges (4.19) 
+Note: Portable instruments have very different cons tructions for a large number of very different 
+applications so that it is principally not possibl e to define uniform test procedures. Different 
+requirements, conditions and specificati ons could be necessary depending on the 
+construction and application and, of course,  on the metrological demands (e.g. accuracy 
+class). These should be mentioned and describ ed in the respective Test Report. A.4.13 
+therefore only provides some general means for properly testing a portable instrument. 
+To be performed during type approval: 
+ At a site agreed with the manufacturer: 
+- examine the evenness of the reference area (all points of support of the bridge being at 
+the same level) and then perform an accuracy test and an eccentricity test; and 
+- realize several reference areas with some different faults in the evenness (the values of 
+these faults are to be equal to the limits given by the manufacturer) and then perform 
+an eccentricity test for each configuration. 
+ At a site where the instrument is used: 
+- examine the conformity to the requirements for the mounting surface; and 
+- examine the installation and perform tests to establish conformity with the 
+metrological requirements. 
+A.5 Influence factors 
+A.5.1 Tilting (only class II, I II and IIII instruments) (3.9.1.1) 
+The instrument shall be tilted both forwards and b ackwards longitudinally, and from side to side, 
+transversely. 
+In practice the tests (no-load and loaded) described  in A.5.1.1.1 and A.5.1.1.2 can be combined as 
+follows. 
+After zero-setting in the reference position, the indica tion (prior to rounding) is determined at no-load 
+and at the two test loads. The instrument is then  unloaded and tilted (without a new zero-setting), after 
+which the indications at no load and at the two test  loads are determined. This procedure is repeated 
+for each of the tilting directions. 
+In order to determine the influence of tilting on the loaded instrument, the indication obtained at each 
+tilt shall be corrected for the deviation from zero which the instrument had prior to loading. 
+If the instrument is provided with automatic zero-setting or zero-tracking, it shall not be in operation. 
+ 
+ 
+ 
+94 
+ 
+
+=== PAGE 95 ===
+OIML R 76-1: 2006 (E) 
+ 
+A.5.1.1 Tilting of instruments with a level indi cator or automatic tilt sensor (3.9.1.1a and b) 
+A.5.1.1.1 Tilting at no-load 
+The instrument shall be set to zero in its reference position (not tilted). The instrument shall then be 
+tilted longitudinally up to the limiting value of tilting. The zero indication is noted. The test shall be 
+repeated with transverse tilting. 
+A.5.1.1.2 Tilting when loaded 
+The instrument shall be set to zero in its referenc e position and two weighings shall be carried out at a 
+load close to the lowest load wh ere the maximum permissible error ch anges, and at a load close to 
+Max. The instrument is then unloaded and tilted lo ngitudinally and set to zero. The tilting shall be 
+equal to the limiting value of tilting. Weighing test s as described above shall be performed. The test 
+shall be repeated with transverse tilting. 
+A.5.1.2 Other instruments (3.9.1.1 c) 
+For instruments liable to be tilted and neither fitted with a level indicator nor with an automatic tilt 
+sensor the tests in A.5.1.1 shall be performed with a tilting of 50/1000 or, in case of an instrument with 
+automatic tilt sensor, with a tilting equal to the limiting value of tilting as defined by the manufacturer. 
+A.5.1.3 Tilt test for mobile instruments used outside in open locations (3.9.1.1d and 4.18.1) 
+Appropriate load receptors for applying the test loads are to be provided by the applicant. 
+The tilt test shall be performed with the limiting value of tilting. 
+The instrument shall be tilted both forwards and b ackwards longitudinally, and from side to side, 
+transversely. 
+Functional tests shall be performed to ensure that , if applicable, tilt sensors or inclination switches 
+function properly especially when generating the si gnal that the maximum permissible tilt is reached 
+or exceeded (e.g. display switch-off, error signal, lamp), and inhibiting transmission and printing of 
+weighing results. 
+The test shall be performed near the switching-off point (in the case of an automatic tilt sensor) or near 
+the tilt where the load receptor comes into contact with the surrounding frame construction (in the case 
+of a cardanic suspension). This is the limiting value of tilting. 
+If the instrument is provided with automatic zero-setting or zero-tracking, it shall not be in operation. 
+The instrument shall be tested according to A.5.1 and A.5.1.1 or A.5.1.2. 
+A.5.2 Warm-up time test (5.3.5) 
+An instrument using electric power shall be disco nnected from the supply for a period of at least 
+8 hours prior to the test. The instrument shall then be connected and switched on and as soon as the 
+indication has stabilized, the instrument shall be set to zero and the error at zero shall be determined. 
+Calculation of the error shall be made according to A.4.4.3. The instrument shall be loaded with a load 
+close to Max. These observations shall be repeat ed after 5, 15 and 30 minutes. Every individual 
+measurement performed after 5, 15, and 30 minutes, shall be corrected for the zero error at that time. 
+For instruments of class I, the provisions of the operating manual for the time following connection to 
+the mains shall be observed. 
+ 
+ 
+ 
+95 
+ 
+

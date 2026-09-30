@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://weighproof.org/schemas/ruleset.schema.json",
+  "title": "WeighProof OIML R 76 Ruleset Schema",
+  "type": "object",
+  "required": [
+    "ruleset_id",
+    "edition",
+    "title",
+    "rounding_mode",
+    "accuracy_classes",
+    "in_service_mpe_multiplier",
+    "multi_interval_rules",
+    "eccentricity_rules",
+    "repeatability_rules"
+  ],
+  "properties": {
+    "ruleset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "rounding_mode": {
+      "type": "string",
+      "enum": ["ROUND_HALF_UP", "ROUND_HALF_EVEN", "ROUND_UP", "ROUND_DOWN"]
+    },
+    "in_service_mpe_multiplier": {
+      "type": "number",
+      "minimum": 1.0
+    },
+    "accuracy_classes": {
+      "type": "object",
+      "required": ["I", "II", "III", "IIII"],
+      "properties": {
+        "I": { "$ref": "#/$defs/accuracyClassDef" },
+        "II": { "$ref": "#/$defs/accuracyClassDef" },
+        "III": { "$ref": "#/$defs/accuracyClassDef" },
+        "IIII": { "$ref": "#/$defs/accuracyClassDef" }
+      }
+    },
+    "multi_interval_rules": {
+      "type": "object",
+      "required": ["min_ratio_max_to_next_e"],
+      "properties": {
+        "min_ratio_max_to_next_e": {
+          "type": "object",
+          "properties": {
+            "I": { "type": "integer" },
+            "II": { "type": "integer" },
+            "III": { "type": "integer" },
+            "IIII": { "type": "integer" }
+          },
+          "required": ["I", "II", "III", "IIII"]
+        }
+      }
+    },
+    "eccentricity_rules": {
+      "type": "object",
+      "required": ["default_fraction_of_max", "points_of_support_fraction_rule"],
+      "properties": {
+        "default_fraction_of_max": { "type": "string" },
+        "points_of_support_fraction_rule": { "type": "string" }
+      }
+    },
+    "repeatability_rules": {
+      "type": "object",
+      "required": [
+        "threshold_capacity_kg",
+        "runs_below_threshold",
+        "runs_at_or_above_threshold",
+        "test_load_fractions"
+      ],
+      "properties": {
+        "threshold_capacity_kg": { "type": "number" },
+        "runs_below_threshold": { "type": "integer", "minimum": 1 },
+        "runs_at_or_above_threshold": { "type": "integer", "minimum": 1 },
+        "test_load_fractions": {
+          "type": "array",
+          "items": { "type": "number" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "accuracyClassDef": {
+      "type": "object",
+      "required": ["name", "classification_intervals", "mpe_bands_initial"],
+      "properties": {
+        "name": { "type": "string" },
+        "classification_intervals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["e_min_g", "e_max_g", "min_capacity_multiplier_e", "n_min", "n_max"],
+            "properties": {
+              "e_min_g": { "type": ["number", "null"] },
+              "e_max_g": { "type": ["number", "null"] },
+              "min_capacity_multiplier_e": { "type": "integer" },
+              "n_min": { "type": "integer" },
+              "n_max": { "type": ["integer", "null"] }
+            }
+          }
+        },
+        "mpe_bands_initial": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["m_min_e", "m_max_e", "mpe_multiplier_e"],
+            "properties": {
+              "m_min_e": { "type": "number" },
+              "m_max_e": { "type": ["number", "null"] },
+              "mpe_multiplier_e": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

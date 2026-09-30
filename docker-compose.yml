@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  weighproof:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weighproof-app
+    ports:
+      - "8000:8000"
+    environment:
+      - WEIGHPROOF_JWT_SECRET=weighproof-sih2026-production-super-secret-key-32bytes-min!!
+    volumes:
+      - ./rulesets:/app/rulesets
+      - ./docs:/app/docs
+    restart: unless-stopped

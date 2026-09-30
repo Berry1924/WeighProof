@@ -1,0 +1,246 @@
+=== Page 26 ===
+OIML R 76-1: 2006 (E) 
+ 
+2.4 Application of requirements 
+The requirements of this Recommendation apply to  all devices performing the relevant functions, 
+whether they are incorporated in an instrument or manufactured as separate units. Examples are: 
+ load-measuring device; 
+ displaying device; 
+ printing device; 
+ preset tare device; and 
+ price-calculating device. 
+However, devices that are not incorporated in the instrument may, by national legislation, be exempted 
+from the requirements for special applications. 
+2.5 Terminology 
+The terminology given in chapter T Terminology sh all be considered as a binding part of this 
+Recommendation. 
+3 Metrological requirements 
+3.1 Principles of classification 
+3.1.1 Accuracy classes 
+The accuracy classes for instruments and their symbols* are given in Table 1. Please note that the 
+class denominations used in this Recommendati on do not include the oval around the number for 
+improved clarity of the Recommendation’s text. 
+Table 1 
+Name Symbol marked on 
+instrument 
+Denomination used in 
+this Recommendation 
+Special accuracy 
+  I 
+High accuracy 
+  II 
+Medium accuracy 
+  III 
+Ordinary accuracy 
+  IIII 
+* Ovals of any shape, or two horizontal lines joined by tw o half-circles are permitted. A circle shall not be used 
+because, in conformity with OIML R 34 Accuracy classes of measuring instruments , it is used for the designation of 
+accuracy classes of measuring instruments of which the maximum permissible errors are expressed by a constant 
+relative error in %. 
+3.1.2 Verification scale interval 
+The verification scale interval for different types of instruments is given in Table 2. 
+Table 2 
+Type of instrument Verification scale interval 
+Graduated, without auxiliary indicating device e = d 
+Graduated, with auxiliary indicating device e is chosen by the manufacturer according to the 
+requirements in 3.2 and 3.4.2 
+Non-graduated e is chosen by the manufacturer according to the 
+requirements in 3.2 
+ 
+26 
+ 
+
+=== Page 27 ===
+OIML R 76-1: 2006 (E) 
+ 
+3.2 Classification of instruments 
+The verification scale interval, number of verification scale intervals and the minimum capacity, in 
+relation to the accuracy class of an instrument, are given in Table 3. 
+Table 3 
+Number of verification 
+scale intervals, 
+n = Max/e 
+Accuracy 
+class 
+Verification 
+scale interval, e 
+minimum maximum 
+Minimum 
+capacity, 
+Min 
+(Lower limit) 
+Special 
+(I) 0.001 g ≤ e* 50 000** – 100 e 
+High 
+(II) 
+0.001 g ≤ e ≤ 0.05 g 
+0.1 g ≤ e 
+100 
+5 000 
+100 000 
+100 000 
+20 e 
+50 e 
+Medium 
+(III) 
+0.l g ≤ e ≤ 2 g 
+5 g ≤ e 
+100 
+500 
+10 000 
+10 000 
+20 e 
+20 e 
+Ordinary 
+(IIII) 5 g ≤ e 100 1 000 10 e 
+* It is not normally feasible to test and verify an instrument to e < 1 mg, due to the uncertainty of the test loads. 
+** See exception in 3.4.4. 
+The minimum capacity is reduced to 5 e for grading instruments, i.e. instruments that determine a 
+transport tariff or toll (e.g. postal scales and instruments weighing waste material). 
+On multiple range instruments th e verification scale intervals are e1, e2, …, er with e 1 < e2 < … < er. 
+Similar subscripts are also used with the terms Min, n and Max. 
+On multiple range instruments, each range is treated as if it were an instrument with one range. 
+For special applications that are clearly marked on the instrument, an instrument may have weighing 
+ranges in classes I and II, or in classes II and III. The instrument as a whole shall then comply with the 
+more severe requirements of 3.9 applicable to either of the two classes. 
+3.3 Additional requirements for multi-interval instruments 
+3.3.1 Partial weighing range 
+Each partial range (index i = 1, 2, …) is defined by: 
+ its verification scale interval, ei, ei+1 > ei; 
+ its maximum capacity, Maxi; and 
+ its minimum capacity, Mini = Maxi–1 (for i = 1, the minimum capacity is Min1 = Min). 
+The number of verification scale intervals, ni, for each partial range is equal to Maxi / ei. 
+3.3.2 Accuracy class 
+ei and ni in each partial weighing range, and Min 1 shall comply with the requirements given in Table 3 
+according to the accuracy class of the instrument. 
+3.3.3 Maximum capacity of partial weighing ranges 
+With the exception of the last partial weighing ra nge, the requirements in Table 4 shall be complied 
+with, according to the accuracy class of the instrument. 
+ 
+ 
+27 
+ 
+
+=== Page 28 ===
+OIML R 76-1: 2006 (E) 
+ 
+Table 4 
+Class I II III IIII 
+Maxi / ei+1 ≥ 50 000 ≥ 5 000 ≥ 500 ≥ 50 
+Example for a multi-interval instrument: 
+Maximum capacity, Max = 2 / 5 / 15 kg, class III 
+Verification scale interval, e = 1 / 2 / 10 g 
+This instrument has one Max and one weighing range from Min = 20 g to Max = 15 kg. The partial weighing ranges are: 
+Min = 20 g, Max1 = 2 kg, e1 = l g, n1 = 2 000 
+Min2 = 2 kg, Max2 = 5 kg, e2 = 2 g, n2 = 2 500 
+Min3 = 5 kg, Max3 = Max = 15 kg, e3 = 10 g, n3 = 1 500 
+The maximum permissible errors on initial verification (mpe) (see 3.5.1) are: 
+for m = 0 g to 500 g mpe = ± 0.5 e1 = ± 0.5 g 
+for m > 500 g to 2 000 g mpe = ± 1 e1 = ± 1 g 
+for m > 2 000 g to 4 000 g mpe = ± 1 e2 = ± 2 g 
+for m > 4 000 g to 5 000 g mpe = ± 1.5 e2 = ± 3 g 
+for m > 5 000 g to 15 000 g mpe = ± 1 e3 = ± 10 g 
+Whenever the variation of the indication due to cer tain influence factors is limited to a fraction or 
+multiple of e, this means, in a multi-interval instrument, that e is to be taken according to the load 
+applied; particularly at or near zero, load e = e1. 
+3.3.4 Instrument with a tare device 
+Requirements concerning the ranges of a multi-interval  instrument apply to the net load, for every 
+possible value of the tare. 
+3.4 Auxiliary indicating devices 
+3.4.1 Type and application 
+Only instruments of classes I and II may be fitted with an auxiliary indicating device, which shall be: 
+ a device with a rider; 
+ a device for interpolation of reading; 
+ a complementary displaying device (see Figure 4); or 
+ an indicating device with a differentiated scale division (see Figure 5). 
+These devices are permitted only to the right of the decimal sign. 
+A multi-interval instrument shall not be fitted with an auxiliary indicating device. 
+Note: Extended displaying devices (see T.2.6 and 4.4. 3) are not regarded as auxiliary indicating 
+devices. 
+ 
+28 
+ 
+
+=== Page 29 ===
+OIML R 76-1: 2006 (E) 
+ 
+Figure 4 – Example of a complementary displaying device 
+ 
+indication: 174.273 g 
+last figure: 3 
+d = 1 mg 
+e = 10 mg 
+Figure 5 – Examples of indicating devices each with a differentiated scale division 
+ 
+last differentiated figure: 5 
+d = 0.01 g or 0.05 g 
+e = 0.1 g 
+ 
+last differentiated figure: 8 
+d = 0.01 g or 0.02 g 
+e = 0.1 g 
+3.4.2 Verification scale interval 
+The verification scale interval, e, is determined by the expression: 
+d < e ≤ 10 d (see Tables 5a and 5b) 
+e = 10
+k kg 
+k being a positive or negative whole number, or zero. 
+For a self- or semi-self-indicating instrument, see 4.2.2.1. 
+Table 5a – Example values of e, calculated following this rule 
+d = 0.1 g 0.2 g 0.5 g 
+e = 1 g 1 g 1 g 
+e = 10 d 5 d 2 d 
+This requirement does not apply to an instrument of class I with d < 1 mg, where e = 1 mg, as shown 
+in the following Table. 
+Table 5b – Example values of e where d < 1 mg 
+d = 0.01 mg 0.02 mg 0.05 mg < 0.01 mg 
+e = 1 mg 1 mg 1 mg 1 mg 
+e = 100 d 50 d 20 d > 100 d 
+ 
+ 
+29 
+ 
+
+=== Page 30 ===
+OIML R 76-1: 2006 (E) 
+ 
+3.4.3 Minimum capacity 
+The minimum capacity of the instrument is determined in conformity with the requirements in 
+Table 3. However, in the last column of this Table, the verification scale interval, e, is replaced by the 
+actual scale interval, d. 
+3.4.4 Minimum number of verification scale intervals 
+For an instrument of class I with d < 0.1 mg, n may be less than 50 000. 
+3.5 Maximum permissible errors 
+3.5.1 Values of maximum permissible errors on initial verification 
+The maximum permissible errors for increasing or decreasing loads are given in Table 6. 
+Table 6 
+For loads, m, expressed in verification scale intervals, e 
+Maximum 
+permissible 
+errors on 
+initial 
+verification Class I Class II Class III Class IIII 
+± 0.5 e 0 ≤ m ≤ 50 000 0 ≤ m ≤ 5 000 0 ≤ m ≤ 500 0 ≤ m ≤ 50 
+± 1.0 e 50 000 < m ≤ 200 000 5 000 < m ≤ 20 000 500 < m ≤ 2 000 50 < m ≤ 200 
+± 1.5 e 200 000 < m 20 000 < m ≤ 100 000 2 000 < m ≤ 10 000 200 < m ≤ 1 000 
+Note: The absolute value of the maximum permissible error is 0.5 e, 1.0 e or 1.5 e, i.e. it is the 
+value of the maximum permissible error without the positive or negative sign. 
+Note: For multi-interval instruments, refe r to 3.3 (including the example). 
+3.5.2 Values of maximum perm issible errors in service 
+The maximum permissible errors in service shall be twice the maximum permissible errors on initial 
+verification (see 8.4.2). 
+3.5.3 Basic rules concerning the determination of errors 
+3.5.3.1 Influence factors 
+Errors shall be determined under normal test cond itions. When the effect of one factor is being 
+evaluated, all other factors are to be kept relatively constant, at a value close to normal. 
+3.5.3.2 Elimination of rounding error 
+The rounding error included in any digital indication sha ll be eliminated if the actual scale interval is 
+greater than 0.2 e. 
+3.5.3.3 Maximum permissible errors for net values 
+The maximum permissible errors apply to the net va lue for every possible tare load, except preset tare 
+values. 
+ 
+ 
+30 
+ 
+

@@ -1,0 +1,101 @@
+{
+  "failing_cases": [
+    {
+      "case_id": "FAIL-WEIGHING-001",
+      "description": "Weighing point exceeds Class III MPE at 4000g (error = 2.4g, MPE = 2.0g)",
+      "instrument": {
+        "accuracy_class": "III",
+        "max_capacity": 6000.0,
+        "min_capacity": 40.0,
+        "verification_scale_interval_e": 2.0,
+        "actual_scale_interval_d": 2.0,
+        "unit": "g"
+      },
+      "point": {
+        "direction": "increasing",
+        "load": 4000.0,
+        "indicated": 4002.0,
+        "delta_load": 0.6,
+        "e0": 0.0,
+        "calculated_p": 4002.4,
+        "calculated_error": 2.4,
+        "calculated_corrected_error": 2.4,
+        "mpe": 2.0,
+        "expected_verdict": "FAIL",
+        "expected_failure_reason": "Corrected error 2.40 g exceeds MPE 2.00 g"
+      }
+    },
+    {
+      "case_id": "FAIL-ECCENTRICITY-001",
+      "description": "Eccentricity corner 3 exceeds MPE (Ec = 2.3g, MPE = 2.0g)",
+      "instrument": {
+        "accuracy_class": "III",
+        "max_capacity": 6000.0,
+        "min_capacity": 40.0,
+        "verification_scale_interval_e": 2.0,
+        "actual_scale_interval_d": 2.0,
+        "unit": "g"
+      },
+      "position": {
+        "position_id": "pos_3",
+        "load": 2000.0,
+        "indicated": 2002.0,
+        "delta_load": 0.7,
+        "e0": 0.0,
+        "calculated_error": 2.3,
+        "calculated_corrected_error": 2.3,
+        "mpe": 2.0,
+        "expected_verdict": "FAIL"
+      }
+    },
+    {
+      "case_id": "FAIL-REPEATABILITY-001",
+      "description": "Repeatability range delta E exceeds MPE (Emax - Emin = 2.5g, MPE = 2.0g)",
+      "instrument": {
+        "accuracy_class": "III",
+        "max_capacity": 6000.0,
+        "min_capacity": 40.0,
+        "verification_scale_interval_e": 2.0,
+        "actual_scale_interval_d": 2.0,
+        "unit": "g"
+      },
+      "series": {
+        "load": 3000.0,
+        "mpe": 2.0,
+        "errors": [0.2, 0.5, -0.8, 1.2, 1.7, -0.4, 0.0, 0.3, 0.8, -0.3],
+        "expected_e_max": 1.7,
+        "expected_e_min": -0.8,
+        "expected_range": 2.5,
+        "expected_range_verdict": "FAIL"
+      }
+    },
+    {
+      "case_id": "FAIL-PLAUSIBILITY-001",
+      "description": "Invalid scale division interval e = 3g (violates 1, 2, 5 x 10^k)",
+      "instrument": {
+        "accuracy_class": "III",
+        "max_capacity": 6000.0,
+        "min_capacity": 40.0,
+        "verification_scale_interval_e": 3.0,
+        "actual_scale_interval_d": 3.0,
+        "unit": "g"
+      },
+      "expected_rejection": true,
+      "expected_error": "Scale interval 3.0 does not belong to standard sequence {1, 2, 5} x 10^k"
+    },
+    {
+      "case_id": "FAIL-PLAUSIBILITY-002",
+      "description": "Number of intervals n = 15000 exceeds maximum 10000 for Class III",
+      "instrument": {
+        "accuracy_class": "III",
+        "max_capacity": 15000.0,
+        "min_capacity": 20.0,
+        "verification_scale_interval_e": 1.0,
+        "actual_scale_interval_d": 1.0,
+        "unit": "g"
+      },
+      "expected_rejection": true,
+      "expected_error": "n = 15000 exceeds maximum permitted 10000 for accuracy class III"
+    }
+  ]
+}

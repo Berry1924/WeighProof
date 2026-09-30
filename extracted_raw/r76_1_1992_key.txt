@@ -1,0 +1,183 @@
+=== Page 20 ===
+3.1.2 Verification scale interval
+The verification scale interval for different types of instruments is given in
+Table 2.
+Table 2
+3.2 Classification of instruments
+The verification scale interval, number of verification scale intervals and the mini-
+mum capacity, in relation to the accuracy class of an instrument, are given in Table 3.
+Table 3
+On multiple range instruments the verification scale intervals are e 1, e2, …, e r with
+e1 l e2 l … l er. Min, n and Max are indexed accordingly.
+(*) It is not normally feasible to test and verify an instrument to e l 1 mg, due to the uncertainty of the
+test loads.
+(**) See exception in 3.4.4.
+–2 0–
+Type of instrument Verification scale interval
+Graduated, without auxiliary e = d
+indicating device
+Graduated, with auxiliary e is chosen by the manufacturer according to
+indicating device requirements in  3.2 and 3.4.2
+Non-graduated e is chosen by the manufacturer according to
+requirements in 3.2
+Accuracy
+class
+Verification
+scale interval e
+Number of verification
+scale intervals
+n = Max/e
+minimum maximum
+Minimum
+capacity
+Min
+(Lower
+limit)
+Special
+0.001 g o e (*) 50 000 (**) – 100 e
+High 0.001 g o e o 0.05 g 100 100 000 20 e
+0.1 g o e 5 000 100 000 50 e
+Medium 0.1 g o e o 2 g 100 10 000 20 e
+5 g o e 500 10 000 20 e
+Ordinary
+5 g o e 100 1 000 10 eIIII
+III
+II
+I
+
+=== Page 21 ===
+On multiple range instruments, each range is treated basically as an instrument
+with one range.
+For special application that are clearly marked on the instrument, an instrument
+may have weighing ranges in classes and or in classes and . The
+instrument as a whole shall then comply with the more severe requirements of 3.9
+applicable to either of the two classes.
+3.3 Additional requirements for a multi-interval instrument (*)
+3.3.1 Partial weighing range
+Each partial range (index i = 1, 2 …) is defined by:
+– its verification scale interval e
+i, ei r1 L ei,
+– its maximum capacity Max i,
+– its minimum capacity Min i = Maxi – 1 (for i = 1 the minimum capacity is Min1 = Min).
+The number of verification scale intervals ni for each partial range is equal to:
+ni = Maxi/ei
+3.3.2 Accuracy class
+ei and ni in each partial weighing range, and Min 1 shall comply with the require-
+ments given in Table 3 according to the accuracy class of the instrument.
+3.3.3 Maximum capacity of partial weighing ranges
+With the exception of the last partial weighing range, the requirements in Table 4
+shall be complied with, according to the accuracy class of the instrument.
+Table 4
+(*) Example for a multi-interval instrument:
+Maximum capacity Max = 15 kg class 
+Verification scale intervals e1 = 1 g from 0 to 2 kg
+e2 = 2 g from 2 kg to 5 kg
+e3 = 10 g from 5 kg to 15 kg
+This instrument has one Max and one weighing range from Min = 20 g to Max = 15 kg. The partial weighing
+ranges are:
+Min = 20 g, Max
+1 = 2 kg, e1 = 1 g, n1 = 2 000
+Min2 = 2 kg, Max 2 = 5 kg, e2 = 2 g, n2 = 2 500
+Min3 = 5 kg, Max 3 = Max = 15 kg, e3 = 10 g, n3 = 1 500
+The maximum permissible errors on initial verification (mpe) (see 3.5.1) are:
+for m = 400 g = 400e 1 mpe = 0.5 g
+for m = 1 600 g = 1 600e 1 mpe = 1.0 g
+for m = 2 100 g = 1 050e 2 mpe = 2.0 g
+for m = 4 250 g = 2 125e 2 mpe = 3.0 g
+for m = 5 100 g = 510e 3 mpe = 10.0 g
+for m = 15 000 g = 1 500e3 mpe = 10.0 g
+Whenever the variation of the indication due to certain influence factors is limited to a fraction or multiple of
+e, this means, in a multi-interval instrument, that e is to be taken according to the load applied; in particular,
+at or near zero load e = e
+1.
+III
+IIIIIIII
+–2 1–
+Class
+Maxi/eir1 O 50 000 O 5 000 O 500 O 50
+IIIIIIIIII
+
+=== Page 23 ===
+3.4.3 Minimum capacity
+The minimum capacity of the instrument is determined in conformity with the
+requirements in Table 3. However, in the last column of this Table, the verification
+scale interval e is replaced by the actual scale interval d.
+3.4.4 Minimum number of verification scale intervals
+For an instrument of class with d l 0.1 mg, n may be less than 50 000.
+3.5 Maximum permissible errors (*)
+3.5.1 Values of maximum permissible errors on initial verification
+The maximum permissible errors for increasing or decreasing loads are given in
+Table 6.
+Table 6
+3.5.2 Values of maximum permissible errors in service
+The maximum permissible errors in service shall be twice the maximum permis-
+sible errors on initial verification.
+3.5.3 Basic rules concerning the determination of errors
+3.5.3.1 Influence factors
+Errors shall be determined under normal test conditions. When the effect of one
+factor is being evaluated, all other factors are to be kept relatively constant, at a value
+close to normal.
+3.5.3.2 Elimination of rounding error
+The rounding error included in any digital indication shall be eliminated if the
+actual scale interval is greater than 0.2 e.
+3.5.3.3 Maximum permissible errors for net values
+The maximum permissible errors apply to the net value for every possible tare load,
+except preset tare values.
+(*) An example of application to multi-interval instruments is given in the footnote to 3.3.
+–2 3–
+Maximum
+permissible
+errors
+on initial
+verification class class class class 
+for loads m expressed in verification scale intervals e
+± 0.5 e 0 o m o 50 000 0 o m o 5 000 0 o m o 500 0 o m o 50
+± 1 e 50 000 l m o 200 000 5 000 l m o 20 000 500 l m o 2 000 50 l m o 200
+± 1.5 e 200 000 l m 20 000 l m o 100 000 2 000 l m o 10 000 200 l m o 1 000
+
+=== Page 24 ===
+3.5.3.4 Tare weighing device
+The maximum permissible errors for a tare weighing device are the same, for any
+tare value, as those of the instrument, for the same value of load.
+3.5.4 Apportioning of errors
+Where modules are examined separately in the process of pattern approval, the fol-
+lowing requirements apply.
+3.5.4.1 The error limits applicable to a module M i which is examined separately are
+equal to a fraction p i of the maximum permissible errors or the allowed variations of
+the indication of the complete instrument. The fractions for any module have to be
+taken for the same accuracy class and the same number of verification scale intervals,
+as for the complete instrument incorporating the module.
+The fractions p
+i shall satisfy the following equation:
+p1
+2 + p2
+2 + p3
+2 + … o 1
+3.5.4.2 The fraction p i shall be chosen by the manufacturer of the module and shall be
+verified by an appropriate test. However, the fraction shall not exceed 0.8 and shall not
+be less than 0.3, when more than one module contribute to the effect in question.
+Acceptable solution (see 2nd paragraph of clause 4, page 40)
+For mechanical structures such as weighbridges, load transmitting devices and
+mechanical or electrical connecting elements evidently designed and manufactured ac-
+cording to sound engineering practice, an overall fraction p
+i = 0.5 may be applied
+without any test, e.g. when levers are made of the same material and when the chain of
+levers has two planes of symmetry (longitudinal and transversal), or when the stability
+characteristics of electrical connecting elements are appropriate for the signals
+transmitted, such as load cell output, impedance,…
+For instruments incorporating the typical modules (see acceptable solution in 8.2.1)
+the fractions p
+i may have the values given in Table 7.
+Table 7
+–2 4–
+Load Electronic ConnectingPerformance criteria cell indicator elements, etc.
+Combined effect (*) 0.7 0.5 0.5
+Temperature effect
+on no load indication 0.7 0.5 0.5
+Power supply variation – 1 –
+Effect of creep 1 – –
+Damp heat 0.7 0.5 0.5
+(*) Combined effects: non-linearity, hysteresis, temperature effect on span. After the warm-up time
+specified by the manufacturer, the combined effect error fractions apply to modules.
+The sign "–" means "not applicable".
+

@@ -1,0 +1,65 @@
+name: WeighProof CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-backend:
+    name: Backend Tests & Metrological Audit
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+          pip install pytest pytest-cov jsonschema
+
+      - name: Validate Ruleset Schemas
+        run: |
+          python -c "
+          import json, jsonschema, glob
+          with open('schemas/ruleset.schema.json') as f:
+              schema = json.load(f)
+          for p in glob.glob('rulesets/*.json'):
+              with open(p) as rf:
+                  data = json.load(rf)
+              jsonschema.validate(instance=data, schema=schema)
+              print(f'Validated ruleset: {p}')
+          "
+
+      - name: Run Pytest Suite with Coverage
+        run: |
+          python -m pytest -v --cov=backend/app/engine --cov=backend/app/reports --cov-fail-under=90
+
+  build-frontend:
+    name: Frontend Build & Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies & Build
+        run: |
+          cd frontend
+          npm ci || npm install
+          npm run build

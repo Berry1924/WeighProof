@@ -1,0 +1,537 @@
+=== Page 1 ===
+2025 IMEKO TC-6 International Conference on 
+Metrology and Digital Transformation - M4DConf 2025 
+Benevento, Italy, September 3-5, 2025 
+ 
+Measurement Data and Information of Non-
+Automatic Weighing Instruments as Structured 
+Data 
+Tatyana Sheveleva1, Gisa Foyer1 
+1 Physikalisch-Technische Bundesanstalt, Bundesallee 100, 38116 Braunschweig, 
+tatyana.sheveleva@ptb.de; gisa.foyer@ptb.de 
+ 
+Abstract – The successful digitization of documents in 
+conformity assessment, e.g. for calibration and test, 
+requires both the compliance with different 
+requirements and the use of a unified machine -
+readable data structure. A well-known example is the 
+data structure for the Digital Calibration Certificate 
+(DCC). Its use is proposed by the German Calibration 
+Service (DKD) in its Report DKD-E 7-3 for the 
+digitization of calibration certificates for non -
+automatic weighing instruments (NAWIs). An analysis 
+has been carried out to check whether the proposal can 
+be applied to OIML R 76 test reports. By comparing 
+the measurement data and information in both types of 
+documents, similarities and differences in the content 
+description were identified. The following publication 
+gives an overview of this analysis and its results and 
+provides suggestions for the description of the test 
+reports using the DCC. 
+ I. INTRODUCTION 
+The digitization of documents used in conformity 
+assessments of non-automatic weighing instruments 
+(NAWIs), such as calibration and test, poses several 
+challenges: On the one hand, all relevant requirements 
+from different standards and other normative sources have 
+to be considered. On the other hand, a unified machine-
+readable data structure needs to be applied, that can cover 
+documents for a wide range of products. A good example 
+to this issue is the already established machine-readable 
+data structure for the Digital Calibration Certificate (DCC) 
+[1]. The DCC is intended to replace the paper-based 
+calibration certificates issued until now in accordance with 
+ISO/IEC 17025 [2]. The German Calibration Service 
+(DKD) has published an Expert Report DKD-E 7-3 [3], 
+which, as a result of extensive discussions, includes a 
+detailed guideline for the content description of the NAWI 
+calibration certificates based on the requirements of 
+EURAMET/CG-18/v.02 [4], the Guide on the Calibration 
+of NAWIs. 
+Since the types of conformity assessment laid down in 
+ISO/IEC 17025 [2] also cover testing, digitizing the 
+corresponding test reports for NAWIs seems to be useful 
+too. NAWIs are tested extensively to support type 
+evaluation of NAWIs, i.e. conformity assessment of the 
+instrument type within legal metrology. The respective 
+requirements, tests and templates for test reports are 
+standardized in the International Recommendations 
+OIML R 76 [5], [6]. 
+Due to the fact that the content of NAWI test reports and 
+NAWI calibration certificates is largely similar, it makes 
+sense to check whether the DCC data structure proposed 
+in DKD-E 7-3 [3] could also be applied to the test reports. 
+For this, a usability analysis was carried out to identify the 
+similarities and the differences between the content of both 
+document types. The detailed description of this analysis 
+and the discussion of its results are therefore the subject of 
+this publication. 
+The publication is structured as follows: After a brief 
+introduction to the subject, a short overview of overall 
+requirements for the description of the content within a 
+calibration certificate and test reports is given in Chapter 
+II. Chapter III summarizes the findings and gives an 
+outlook of possible future activities. 
+ II. MEASUREMENT DATA AND INFORMATION OF 
+NON-AUTOMATIC WEIGHING INSTRUMENTS 
+The overall requirements for reporting the results of a 
+calibration and a test are set out in ISO/IEC 17025 [2]. It 
+states that the results shall be provided unambiguously, 
+usually as a report or certificate, and include all data and 
+information necessary to interpret the results correctly [2]. 
+In addition, the standard provides a list of mandatory 
+information, that each calibration and test report must 
+contain. According to them, both types of documents must, 
+among other things, include information on the object of 
+conformity assessment, the measurement methods applied, 
+the influence conditions, and the measurement results 
+which are obtained and used for further interpretation. All 
+of these content elements have been considered for a 
+comparative analysis and represented in detail in separate 
+sub-chapters. For better differentiation the following 
+notation is applied: the DCC elements are in bold, and the 
+quantities are in lower case italics. 
+292
+
+=== Page 2 ===
+ A. Object of conformity assessment 
+ISO/IEC 17025 [2] and EURAMET/CG-18/v.02 [4] 
+require a calibration certificate to provide a detailed  
+description of the object of conformity assessment. Based 
+on this, the DCC structure has been proposed [2], as shown 
+in Fig. 1. 
+ 
+An individual calibrated NAWI is described by the 
+element dcc:item. Its sub-elements allow to provide a set 
+of further descriptive information. Using the element 
+dcc:identification, one or more identification type can be 
+added. Each identification is referenced by a refType 
+attribute [3]. The refTypes are predefined and can be 
+selected from the centralized “Metrology refType 
+Database” [7]. Here, several types of refType are 
+differentiated by their prefixes: The prefix basic_ relates 
+to the universal methods suitable to different application 
+domains, quantities and instruments [7]. The prefix 
+NAWI_ refers to the methods used only for the calibration 
+of NAWIs [7]. The prefix math_ relates to universal 
+mathematical refTypes, which are usually used in 
+combination with other refTypes to specify them [7]. To 
+identify a NAWI, the refType basic_serialNumber [7] 
+(“serial number”) is applied, as this is the  typical 
+identification type used in calibration certificates [7]. 
+The element dcc:equipmentClass and its sub-element 
+dcc:classID are used to specify a category of the NAWI. 
+As there is no main specified classification of the NAWIs 
+within the scope of calibration, this element was used to 
+describe the categorization of NAWIs based on one of the 
+metrological characteristics, such as “single range 
+instrument” (“NAWI-SR”), “multiple range instrument” 
+(“NAWI-MR”) or “multi-interval instrument” (“NAWI-
+MI”). The dcc:reference and dcc:link elements are used 
+in combination with these predefined categories [3].  
+In cases where the calibrated NAWI is represented as a 
+“complex device” incorporating different “devices” and 
+“parts”, they can be presented using dcc:subItems. Each 
+of them can then be separately described in detail by the 
+sub-element dcc:item. In addition, this sub-element is 
+used to specify several (partial) weighing ranges in case of 
+a multiple range or multi-interval NAWI [3]. The 
+following refTypes have been created to refer the item to 
+the ranges: NAWI_range1, NAWI_range2, 
+NAWI_range3, and NAWI_range4 [7]. 
+All metrological nominal and reference characteristics 
+(dcc:itemQuantities) can be separately described by 
+dcc:itemQuantity in combination with a refType. (Here, 
+the element dcc:itemQuantity is one of the variants of the 
+element dcc:quantity, which can also be used within other 
+elements such as dcc:influenceConditions, dcc:results, 
+or dcc:usedMethods [3], as shown in Fig. 2. 
+ 
+The following characteristic are already covered by the 
+refTypes: 
+• actual scale resolution (d) 
+(NAWI_resolutionOfDisplayingDevice) [7], 
+• verification scale interval (e) 
+(NAWI_verificationScaleInterval) [7], 
+• nominal value (basic_nominalValue) [7]. 
+For the description of range characteristics, the two 
+different refTypes are usually combined to express 
+quantities such as maximum weighing capacity (Max) 
+(math_maximum basic_nominalValue [7]) and 
+minimum weighing capacity (Min) (math_minimum 
+basic_nominalValue [7]) [3].  
+The requirements for describing a NAWI in the 
+framework of tests according to OIML R 76-2 [6] are 
+similar to those for calibration in several aspects. For 
+example, an unambiguous identification is also mandatory. 
+As the NAWI is tested for a subsequent type evaluation, its 
+“type designation” must be specified [6]. This information 
+ 
+Fig. 1. DCC structure of dcc:items [1]. 
+ 
+Fig. 2. DCC structure of dcc:quantity [1]. 
+293
+
+=== Page 3 ===
+can be covered by dcc:identification [1] and its sub-
+elements, but the corresponding refType should be 
+created. 
+In terms of classification, there is no predefined uniform 
+one. For tests, NAWIs can be classified according to their 
+accuracy class (“special” (I), “high” (II), “medium” (III), 
+and “ordinary” (IIII)), as the accuracy is directly related to 
+further main characteristics such as verification scale 
+interval (e), number of verification scale intervals (n), and 
+the minimum capacity (Min), which are important to 
+describe the NAWIs in a required level of detail [5]. 
+There is also no unified  classification for the 
+incorporated “devices” and “parts” of the NAWIs. Instead, 
+different test methods require different classification, each 
+focusing on a specific characteristic. For example, the test 
+report on “weighing performance”, “eccentricity” or 
+“repeatability” must include the cate of “tracking device” 
+and/or “setting device”, if available. For the “eccentricity 
+test using a rolling load”, the “load receptor” has to be 
+specified [6]. This can be described by 
+dcc:equipmentClass within dcc:subItem.  
+The main characteristics of NAWI(s), such as Min, Max, 
+d, e, and resolution during the test [6] can be described by 
+dcc:itemQuantities, since these are also partially relevant 
+to a calibration and the required refTypes are available [3]. 
+The refTypes are still missing for such main 
+characteristics as the number of verification scale intervals 
+(n) as well as for specific characteristics that are not 
+relevant for calibration and are only important for certain 
+test methods. These are, for example:  
+• nominal voltage (Unom), 
+• maximum voltage (Umax), 
+• minimum voltage (Umin), and 
+• frequency (f)  
+necessary for the test method “electrical disturbances” [6].  
+Among the method-specific characteristics, there are 
+also those that carry only qualitative information. As part 
+of an “eccentricity test”, for example, it is important to 
+document whether the NAWI is mobile . For a 
+“discrimination test”, the characterization in terms of the 
+type of indication is required, as this determine which 
+variant of the “discrimination test” is to be applied [6]. 
+These characteristics can be either described by refTypes, 
+which have also to be created, or by the element 
+dcc:noQuantity, as shown in Fig. 2. 
+ B. Methods 
+According to the common requirements of ISO/IEC 
+17025 for the reporting of results, the identification of the 
+method used is considered as mandatory for each 
+calibration certificate and test report [2]. To cover this 
+requirement, the element dcc:usedMethods with its sub-
+element dcc:usedMethod in combination with a refType 
+and a further detailed description [3] has been proposed in 
+the DCC [8], as shown in Fig. 3. 
+In the context of calibration, this requirement is 
+specified for NAWIs more precisely in EURAMET/CG-
+18/v.02 [4]. Based on this, DKD-E 7-3 [3] defined 
+refTypes for the “calibration method” 
+(NAWI_calibrationMethod) and for the “measurement 
+uncertainty” (basic_methodMesasurementUncertainty) 
+[7]. 
+In contrast to a calibration, a test of NAWI(s) generally 
+includes a larger range of test methods, as these are used 
+for the subsequent type evaluation. A general overview 
+and the detailed description of the test methods is given in 
+OIML R 76-1 [5]. OIML R 76-2 [6] provides a 
+standardized format for the respective test reports. 
+However, all these methods cannot currently be digitized 
+by dcc:usedMethod, as the corresponding refTypes are 
+missing. Two solutions are possible: (i) to use the general 
+approach as in DKD-E 7-3 [3] and define a new refType 
+(NAWI_testMethod) or (ii) to define a new refType for 
+each test method, e.g. NAWI_eccentricityTestMethod or 
+NAWI_weighingPerformanceTestMethod. In both cases 
+the DCC is flexible enough to provide further human-
+readable description. 
+ C. Conditions 
+According to ISO/IEC 17025 and EURAMET/CG-
+18/v.02, the conditions must be a mandatory part of each 
+calibration certificate, because they affect the result of the 
+calibration [2], [4]. This requirement has been met in the 
+DCC by use of dcc:influenceConditions [8], as shown in 
+Fig. 4. 
+The following main “influence conditions” have been 
+created so far as refTypes: basic_humidityRelative, 
+basic_adjustment, mass_airDensity, mass_airPressure, 
+and basic_temperature [7]. 
+“Influence conditions” in the DCC are not further 
+specified in categories, such as “operational”, 
+“environmental” or “disturbances”, but can be expressed 
+in different ways within the element dcc:data, as in Fig. 4, 
+among other forms, as text ( dcc:text) or quantity 
+(dcc:quantity), according to the principle described in 
+Sub-chapter A, presented in Fig. 2. So, a temperature 
+(basic_temperature) [7] can be described by si:real with 
+ 
+Fig. 3. DCC structure of dcc:usedMethods [1]. 
+294
+
+=== Page 4 ===
+a single value, unit, and (if applicable) measurement 
+uncertainty. It is also possible to document a temperature 
+range. For this, the refType basic_temperature [7] is 
+used in combination with the refTypes math_maximum 
+or math_minimum [7], each described by a si:real. In 
+addition, there are also conditions that do not require a 
+numerical value but freely formulated explanations or 
+expressions from a predefined list. For example, the 
+“adjustment status” (basic_adjustment) [7] is described 
+by dcc:status in combination with one or more 
+explanatory notes (dcc:text) [3]. For “status”, several 
+values are predefined in DCC (“beforeAdjustment”, 
+“afterAdjustment”, “beforeRepair”, and “afterRepair”), as 
+they are required by ISO/IEC 17025 [2].  
+In the framework of an OIML R 76 test, there are several 
+conditions that must be considered in all test methods 
+required for a type evaluation, as well as those that are 
+method-specific. For instance, an “environmental 
+condition” such as temperature is mandatory for each test 
+method. The optional “environmental conditions” relative 
+humidity and barometric pressure (Bar. Pres.) are only 
+documented for specific types of test methods or for testing 
+NAWIs with a specific accuracy class [5]. Each of these 
+conditions can be expressed by one to three individual 
+values that relate to the start, the end of the measurement 
+and/or to the maximum value recorded during the 
+measurement [6]. 
+The DCC structure proposed for the calibration is also 
+partially applicable to a test. Thus, the three 
+“environmental conditions” expressed by a single 
+maximum value, can be fully covered by both the refTypes 
+and si:real. However, it is not possible to relate these 
+conditions to the start and the end of the measurement, as 
+no refTypes are provided. These should be added for the 
+use in test reports. In addition, there is no possibility to 
+express several “operational conditions” which provide the 
+information on how the “devices” and “parts” incorporated 
+in the NAWI operate during the measurement. For 
+example, for some test methods, it is required to specify, 
+whether the “automatic zero-setting device” and 
+“automatic zero-tracking device” are “not-existent”, “not 
+in operation”, “out of working”, or “in operation” [6]. As 
+these expressions are not relevant to calibration and 
+therefore not part of the DCC data structure, they should 
+be given in a harmonized form, similar to the “adjustment 
+status”. 
+ D. Measurement results  
+The description of the measurement results within a 
+calibration according to requirements of [2] and [4] is 
+realized by dcc:results [3], as shown in Fig. 5:  
+ 
+Here, an individual measurement can be specified using 
+the sub-element dcc:result in combination with one of the 
+following predefined refTypes:  
+• NAWI_repeatabilityMeasurement 
+(“repeatability measurement”) [7], 
+• NAWI_eccentricityMeasurement 
+(“eccentricity measurement”) [7], 
+• NAWI_errorOfIndication (“error of 
+indication”) [7], and 
+• NAWI_auxiliaryMeasurement (“auxiliary 
+measurement”) [7]. 
+Within dcc:data, each quantity (dcc:quantity) is 
+represented by a refType [3]. The typical refTypes used in 
+calibration are: 
+• basic_nominalValue (nominal value) [7] 
+• basic_referenceValue (reference value) [7], 
+• basic_measuredValue (measured value) [7], 
+and  
+• basic_measurementError math_maximum 
+(maximum deviation) [7]. 
+The description of the quantities depends on their type 
+and follows the pattern specified in the Digital System of 
+ 
+Fig. 5. DCC structure for dcc:results [1]. 
+ 
+Fig. 4. DCC structure of dcc:influenceConditions [1]. 
+295
+
+=== Page 5 ===
+Units (D-SI) [8]. For example, the nominal value 
+(basic_nominalValue) [7] of a test load as part of a 
+“repeatability test” is usually documented as a single 
+numerical value with the corresponding unit. In a 
+calibration certificate, it is described using si:real [8] as in 
+Table 1: 
+Table 1. D-SI-based description of a nominal value [3]. 
+Human Readable 
+Equivalent 
+Sub-elements of  
+si:real 
+Value Example 
+value si:value 2 
+unit si:unit \kilogram 
+The same pattern can also be applied to a reference value 
+(mass_referencedValue) [7]. 
+The measured values (basic_measuredValue) [7] 
+obtained in one measurement sequence of the “eccentricity 
+test” shall be related to the position of the test load on the 
+load receptor [5]. For this, the following D-SI pattern has 
+been applied, as given in Table 2: 
+Table 2. D-SI-based description of measured values [3]. 
+Human Readable 
+Equivalent  
+Sub-elements of  
+si:realListXMList 
+Value Example 
+load position si:labelXMLList Position1 Position2 
+Position3 … 
+measured values  si:valueXMLList 0.1004 0.1005 … 
+SI unit  si:unitXMLList \kilogram 
+The description of the measurement results in the 
+framework of the OIML R 76-2 test reports [6] have some 
+similarities to the calibration certificate. For example, 
+measurement types such as “repeatability measurement”, 
+“eccentricity measurement”, and “error of indication” can 
+be covered by the respective refTypes used for a 
+calibration. However, OIML R 76-2 also includes a large 
+number of other measurement types for which no refTypes 
+have yet been provided, as they are not relevant for 
+calibration, such as “discrimination and sensitivity”, 
+“tare”, “warm-up time”, “voltage variation” , and 
+“electrical disturbances” [6]. 
+Most of the main quantities used in a test can be covered 
+by the existing refTypes and D-SI quantities. So, the 
+basic_nominalValue can be applied to describe the 
+nominal value of different types of loads, such as: 
+• “test load”, 
+• “additional load” (∆L), which is only required 
+for NAWIs without higher resolution,  
+• “zero-load” (L0) as load at or near zero  
+indication, and  
+• “tare-load” needed, among others, for the test 
+method “stability of equilibrium” [6].  
+The refType basic_measuredValue can be used for an 
+indicated weight value (I) [6], which is always an 
+individual value. In cases where several values are 
+obtained depending on the position of the test load, such 
+as in an “eccentricity test”, the D-SI quantity pattern 
+si:realListXMLList can be reused here. The refType 
+basic_measurementError is applicable to an error of 
+indication (E) [6], while mpe is part of the statement of 
+conformity and serves as a basic_toleranceLimitUpper 
+and basic_toleranceLimitLower [7]. This is similar to 
+the tolerance in [4] but was not considered in [3]. 
+Some test-specific quantities do not have refTypes 
+because they are not applicable within a calibration, such 
+as the corrected error of indication (Ec) as the difference 
+between the error of indication and the error calculated 
+at or near zero indication (E - E0). Additionally, the 
+refType for E0 (zeroReduced [7]) actually exists only in 
+relation to the force-related quantity and could be 
+adopted for NAWIs within the framework of calibration 
+or tests. Some measurements, such as those carried out 
+within “repeatability test”, requires the difference 
+between the maximum and minimum error of indication 
+(Emax – Emin) in order to make the result statement about 
+the success or failure if the test. Since the “repeatability 
+test” within a calibration does not require such a 
+difference but a standard deviation of the measured 
+value, a refType for (Emax – Emin) shall be created. 
+Furthermore, the refType basic_referenceValue from 
+the calibration is not applicable, as tests based on OIML 
+R 76-2 are only carried out with the nominal values of 
+the loads [6]. 
+ III. CONCLUSIONS 
+The comparison showed that the DCC data structure for 
+a NAWI calibration certificate can largely be applied to the 
+test reports according to OIML R 76 [5], [6]. Most of the 
+information/data that occur in the test reports can be 
+captured by the DCC data structure, e.g. the object of 
+conformity assessment, the method, the conditions, and the 
+results.  
+In general, it is not possible to describe test-specific 
+information that does not appear in a calibration certificate 
+and is therefore not reproducible in machine-readable form 
+using DCC. In many cases, this is caused by missing 
+refTypes. With regard to the description of the object of 
+conformity, these are, for example, the identification as 
+"type designation" as well as some specific metrological 
+and functional characteristics that can be treated as 
+“influence conditions”. As most of these conditions form 
+the basis of specific test methods as part of a type 
+evaluation, they do not occur in this form in a calibration. 
+This also concerns the refTypes for the test methods as 
+such. 
+Another important aspect is the difference in how the 
+classification of the NAWIs is treated. For a calibration, 
+the categorization was fixed in terms of measurement 
+ranges and measurement intervals [3], as these are the 
+focus of each calibration. The categorization for a test is 
+more complex. However, each classification used within 
+296
+
+=== Page 6 ===
+different tests can be described by the DCC due to its 
+generalized structure.  
+Despite the existing differences between the two types 
+of documents presented here, it is extremely important to 
+adhere to existing structures and procedures during 
+digitization to maintain consistency in such a wide area as 
+conformity assessment. In addition, many other areas 
+related to conformity assessment, such as manufacturing, 
+standardization or market surveillance, may also benefit 
+from the harmonization, especially those, where the data 
+and information from both calibration certificates and test 
+reports can be reused, as e.g. Asset Administration Shell 
+(AAS) or Digital Product Passport (DPP).  
+ IV. ACKNOWLEDGMENTS 
+This publication was written within the project 
+framework German QI-Digital Initiative, funded by the 
+Federal Ministry for Economic Affairs and Energy. 
+REFERENCES 
+[1] Physikalisch-Technische Bundesanstalt, “DCC – 
+Digital Calibration Certificate.” Accessed: Apr. 
+25, 2025. [Online]. Available: 
+https://www.ptb.de/dcc/v3.3.0-
+rc.1/autogenerated-docs/Dokumentation.html 
+[2] ISO/IEC, “ISO/IEC 17025:2017: General 
+requirements for the competence of testing and 
+calibration laboratories,” 2017. 
+[3] Deutscher Kalibrierdienst, “DKD-E-7-3: 
+Instruction in how to use the DCC schema to 
+create a digital calibration certificate for non-
+automatic weighing instruments,” 2025, DKD, 
+Braunschweig. 
+[4] European Association of national Metrology, 
+“Calibration Guide EURAMET/cg-18/v.02 – 
+Englisch Version,” 2009, EURAMET e.V , 
+Braunschweig. 
+[5] International Organization of Legal Metrology, 
+“OIML R 76-1: Non-automatic weighing 
+instruments. Part 1: Metrological and technical 
+requirements – Tests. 2006 (E),” 2006, Bureau 
+International de Métrologie Légale, Paris. 
+Accessed: Jun. 22, 2025. [Online]. Available: 
+https://circabc.europa.eu/webdav/CircaBC/nbg/N
+oBoMet%2 
+0(Notified%20Bodies%20in%20Legal%20Metro
+logy)/Infor mation/news_5ba7ba0a-bf8b-4421-
+8078- 
+2f757d68a80b/NoBoMet_Documentation_D-
+CoC_V1 
+[6] International Organization of Legal Metrology, 
+“OIML R 76-2: Non-automatic weighing 
+instruments. Part 2: Test report format,” 2007, 
+Bureau International de Métrologie Légal, Paris. 
+[7] “Metrology refType Database.” Accessed: Apr. 
+02, 2025. [Online]. Available: 
+https://digilab.ptb.de/dkd/refType/vocab/index.ph
+p 
+[8] D. Hutzschenreuter et al., “SmartCom Digital 
+System of Units (D-SI) Guide for the use of the 
+metadata-format used in metrology for the easy-
+to-use, safe, harmonised and unambiguous digital 
+transfer of metrological data - Second Edition (D-
+SI 1.3.0-2). Zenodo,” 2020. doi: 
+https://doi.org/10.5281/zenodo.3816686. 
+  
+ 
+297
+

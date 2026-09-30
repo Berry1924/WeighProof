@@ -1,0 +1,84 @@
+{
+  "oracle_id": "ORACLE-CLASS-III-6KG-001",
+  "standard": "OIML R 76-1:2006",
+  "standard_report": "OIML R 76-2:2007",
+  "instrument": {
+    "manufacturer": "Dibal S.A.",
+    "model": "CS-6000",
+    "serial_number": "SN-2026-6KG-01",
+    "accuracy_class": "III",
+    "max_capacity": 6000.0,
+    "min_capacity": 40.0,
+    "verification_scale_interval_e": 2.0,
+    "actual_scale_interval_d": 2.0,
+    "unit": "g",
+    "device_type": "graduated_without_auxiliary",
+    "points_of_support": 4,
+    "is_multi_interval": false
+  },
+  "plausibility_expected": {
+    "is_valid": true,
+    "n_calculated": 3000,
+    "n_min_allowed": 100,
+    "n_max_allowed": 10000,
+    "min_capacity_allowed": 40.0
+  },
+  "tests": {
+    "weighing_performance": {
+      "initial_zero_error_e0": 0.2,
+      "points": [
+        {"direction": "increasing", "load": 0.0, "indicated": 0.0, "delta_load": 0.8, "expected_p": 0.2, "expected_error": 0.2, "expected_corrected_error": 0.0, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 40.0, "indicated": 40.0, "delta_load": 0.9, "expected_p": 40.1, "expected_error": 0.1, "expected_corrected_error": -0.1, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 500.0, "indicated": 500.0, "delta_load": 1.0, "expected_p": 500.0, "expected_error": 0.0, "expected_corrected_error": -0.2, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 1000.0, "indicated": 1000.0, "delta_load": 1.2, "expected_p": 999.8, "expected_error": -0.2, "expected_corrected_error": -0.4, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.6, "expected_p": 2000.4, "expected_error": 0.4, "expected_corrected_error": 0.2, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 3000.0, "indicated": 3000.0, "delta_load": 0.8, "expected_p": 3000.2, "expected_error": 0.2, "expected_corrected_error": 0.0, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 4000.0, "indicated": 4000.0, "delta_load": 0.5, "expected_p": 4000.5, "expected_error": 0.5, "expected_corrected_error": 0.3, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 5000.0, "indicated": 5000.0, "delta_load": 0.7, "expected_p": 5000.3, "expected_error": 0.3, "expected_corrected_error": 0.1, "expected_mpe": 3.0, "expected_verdict": "PASS"},
+        {"direction": "increasing", "load": 6000.0, "indicated": 6000.0, "delta_load": 0.4, "expected_p": 6000.6, "expected_error": 0.6, "expected_corrected_error": 0.4, "expected_mpe": 3.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 5000.0, "indicated": 5000.0, "delta_load": 0.6, "expected_p": 5000.4, "expected_error": 0.4, "expected_corrected_error": 0.2, "expected_mpe": 3.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 4000.0, "indicated": 4000.0, "delta_load": 0.5, "expected_p": 4000.5, "expected_error": 0.5, "expected_corrected_error": 0.3, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.7, "expected_p": 2000.3, "expected_error": 0.3, "expected_corrected_error": 0.1, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 1000.0, "indicated": 1000.0, "delta_load": 1.1, "expected_p": 999.9, "expected_error": -0.1, "expected_corrected_error": -0.3, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 40.0, "indicated": 40.0, "delta_load": 0.8, "expected_p": 40.2, "expected_error": 0.2, "expected_corrected_error": 0.0, "expected_mpe": 1.0, "expected_verdict": "PASS"},
+        {"direction": "decreasing", "load": 0.0, "indicated": 0.0, "delta_load": 0.8, "expected_p": 0.2, "expected_error": 0.2, "expected_corrected_error": 0.0, "expected_mpe": 1.0, "expected_verdict": "PASS"}
+      ],
+      "overall_expected_verdict": "PASS"
+    },
+    "eccentricity": {
+      "initial_zero_error_e0": 0.2,
+      "test_load": 2000.0,
+      "positions": [
+        {"position_id": "center", "description": "Platform center", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.8, "expected_p": 2000.2, "expected_error": 0.2, "expected_corrected_error": 0.0, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"position_id": "pos_1", "description": "Front-left quadrant", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.5, "expected_p": 2000.5, "expected_error": 0.5, "expected_corrected_error": 0.3, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"position_id": "pos_2", "description": "Back-left quadrant", "load": 2000.0, "indicated": 2000.0, "delta_load": 1.1, "expected_p": 1999.9, "expected_error": -0.1, "expected_corrected_error": -0.3, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"position_id": "pos_3", "description": "Back-right quadrant", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.7, "expected_p": 2000.3, "expected_error": 0.3, "expected_corrected_error": 0.1, "expected_mpe": 2.0, "expected_verdict": "PASS"},
+        {"position_id": "pos_4", "description": "Front-right quadrant", "load": 2000.0, "indicated": 2000.0, "delta_load": 0.9, "expected_p": 2000.1, "expected_error": 0.1, "expected_corrected_error": -0.1, "expected_mpe": 2.0, "expected_verdict": "PASS"}
+      ],
+      "overall_expected_verdict": "PASS"
+    },
+    "repeatability": {
+      "series_1": {
+        "load": 3000.0,
+        "mpe": 2.0,
+        "runs": [
+          {"run": 1, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.8, "expected_p": 3000.2, "expected_error": 0.2, "expected_verdict": "PASS"},
+          {"run": 2, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.7, "expected_p": 3000.3, "expected_error": 0.3, "expected_verdict": "PASS"},
+          {"run": 3, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.9, "expected_p": 3000.1, "expected_error": 0.1, "expected_verdict": "PASS"},
+          {"run": 4, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.8, "expected_p": 3000.2, "expected_error": 0.2, "expected_verdict": "PASS"},
+          {"run": 5, "load": 3000.0, "indicated": 3000.0, "delta_load": 1.0, "expected_p": 3000.0, "expected_error": 0.0, "expected_verdict": "PASS"},
+          {"run": 6, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.7, "expected_p": 3000.3, "expected_error": 0.3, "expected_verdict": "PASS"},
+          {"run": 7, "load": 3000.0, "indicated": 3000.0, "delta_load": 1.1, "expected_p": 2999.9, "expected_error": -0.1, "expected_verdict": "PASS"},
+          {"run": 8, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.8, "expected_p": 3000.2, "expected_error": 0.2, "expected_verdict": "PASS"},
+          {"run": 9, "load": 3000.0, "indicated": 3000.0, "delta_load": 1.2, "expected_p": 2999.8, "expected_error": -0.2, "expected_verdict": "PASS"},
+          {"run": 10, "load": 3000.0, "indicated": 3000.0, "delta_load": 0.8, "expected_p": 3000.2, "expected_error": 0.2, "expected_verdict": "PASS"}
+        ],
+        "expected_e_max": 0.3,
+        "expected_e_min": -0.2,
+        "expected_range": 0.5,
+        "expected_range_verdict": "PASS",
+        "overall_series_verdict": "PASS"
+      }
+    }
+  }
+}

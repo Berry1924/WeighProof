@@ -1,0 +1,363 @@
+=== R76-2 PAGE 5 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+5 
+ 
+ 
+Non-automatic weighing instruments 
+ 
+Type evaluation report 
+ 
+ 
+EXPLANATORY NOTES 
+ 
+Meaning of symbols: 
+ 
+I = Indication 
+I
+n = nth indication 
+L = Load 
+ΔL = Additional load to next changeover point 
+P = I + ½ e – ΔL = Indication prior to rounding (digital indication) 
+E = I – L    or    = P – L    or    = I + ½ e – ΔL – L   = Error 
+Ec = Corrected error 
+mpe = Maximum permissible error (absolute value) 
+EUT = Equipment under test 
+ 
+The name(s) or symbol(s) of the unit(s) used to express test results shall be specified in each form. 
+ 
+ 
+For each test, the “SUMMARY OF TYPE EVALUATION” and the 
+“CHECKLIST” shall be completed according to this example: 
+PASSED 
+FAILED 
+when the instrument has passed the test: X  
+when the instrument has failed the test:  X 
+when the test is not applicable: – – 
+ 
+ 
+The white spaces in boxes in the headings of the report should always be filled in according to the following example: 
+ 
+ At start At max At end  
+Temp.: 20.5 
+ 21.2 °C 
+Rel. h.:    % 
+Time:     
+Bar. pres.:    hPa 
+ 
+where: 
+Temp. = temperature 
+Rel. h. = relative humidity 
+Bar. pres. = barometric pressure (baromet ric pressure is necessary for the span st ability test and when specified by IEC 
+test provisions; in other cases it may be necessary only for class I instruments). 
+ 
+“Date” in the test report refers to the date on which the test was performed. 
+ 
+In the disturbance tests (12.1 through 12.7), faults greater than e are acceptable provided that they are detected and acted 
+upon, or that they result from circumstances such that these fa ults shall not be considered as significant (see T.5.5.6 in 
+R 76-1); an appropriate explanation shall be given in the column “Yes (remarks)”. 
+ 
+Numbers in brackets refer to the corresponding subclauses of OIML R 76-1. 
+
+=== R76-2 PAGE 9 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+9 
+ 
+ 
+Summary of type evaluation 
+ 
+Application no.: …………………………….....…………………………… 
+Type designation: ……………….…………………………………………… 
+ 
+ Tests  
+Report page 
+PASSED 
+FAILED 
+Remarks 
+1 Weighing performance Initial °C
+°C
+°C
+°C
+°C
+°C
+°C
+   
+ 
+2 Temperature effect on no-load indication     
+3.1 Eccentricity using weights     
+3.2 Eccentricity using a rolling load     
+4.1 Discrimination     
+4.2 Sensitivity     
+5 Repeatability     
+6.1 Zero return     
+6.2 Creep     
+Printing, storage     7 Stability of equilibrium Zero-setting, tare balancing     
+8 Tilting     
+9 Tare     
+10 Warm-up time     
+11 Voltage variations     
+12.1 AC mains voltage dips and short interruptions     
+a) Mains power supply lines     12.2 Electrical bursts b) I/O circuits and communication lines     
+a) AC mains power supply     12.3 Surges b) Any other kind of power supply lines     
+a) Direct application     12.4 Electrostatic discharges b) Indirect application (contact discharges only)     
+12.5 Immunity to radiated electromagnetic fields     
+12.6 Immunity to conducted radio-frequency fields     
+a) Conduction along supply lines of external 
+12 V and 24 V batteries     
+12.7 
+Electrical transients on 
+instruments powered from a 
+road vehicle power supply b) Capacitive and inductive coupling via lines 
+other than supply lines     
+a) Initial test (at reference temperature)     
+b) Test at high temperature and 85 % relative 
+humidity     13 Damp heat, 
+steady state 
+c) Final test (at reference temperature)     
+14 Span stability     
+a) Initial test     15 Endurance c) Final test     
+ EXAMINATIONS     
+16 Examination of the construction     
+17 Checklist     
+Remarks: 
+
+=== R76-2 PAGE 10 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+10 
+ 
+1 WEIGHING PERFORMANCE (A.4.4) (A.5.3.1) 
+(Calculation of the error) 
+ 
+Application no.: ………………………………………………….     
+Type designation: ………………………………………………….     
+Date: …………………………………………  At start At max At end  
+Observer: ………………………………………… Temp.:  
+  °C 
+Verification  Rel. h.:    % 
+scale interval, e: ………………………………………… Time:     
+Resolution during test  Bar. pres.:    hPa 
+(smaller than e): …………………………………………  (only class I)    
+ 
+Automatic zero-setting and zero-tracking device is: 
+ Non-existent  Not in operation  Out of working range  In operation 
+ 
+Initial zero-setting > 20 % of Max:  Yes  No  (see R 76-1, A.4.4.2) 
+ 
+ 
+E  = I + ½ e – ΔL – L 
+Ec = E – E0 with E0 = error calculated at or near zero* 
+Indication, I Add. load, 
+ΔL Error, E Corrected error, Ec Load, L 
+↓ ↑ ↓ ↑ ↓ ↑ ↓ ↑ 
+mpe 
+ *    *     
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+ 
+Check if |Ec| ≤ |mpe| 
+ 
+ Passed  Failed 
+ 
+Remarks: 
+
+=== R76-2 PAGE 12 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+12 
+ 
+3 ECCENTRICITY (A.4.7) 
+3.1 Eccentricity using weig hts (A.4.7.1, 2 and 3) 
+ 
+Application no.: ………………………………………………….     
+Type designation: ………………………………………………….     
+Date: …………………………………………  At start At max At end  
+Observer: ………………………………………… Temp.:  
+  °C 
+Verification  Rel. h.:    % 
+scale interval, e: ………………………………………… Time:     
+Resolution during test  Bar. pres.:    hPa 
+(smaller than e): …………………………………………  (only class I)    
+ 
+1) Test(s) performed on a mobile instrument (A.4.7.5):  Yes  No 
+2) In case of “Yes” to 1): A.4.7 and A.4.7.1 to A.4.7.4 have been applied:  Yes  No 
+3) In case of “No” to 2): Description of eccentricity test(s) (see A.4.7.5) under “Remarks” 
+ 
+Location of test loads: mark on a sketch (see example below) the successive locations of test loads, using numbers 
+which shall be repeated in the table below. 
+ 
+1 2 
+4 3 
+ 
+Also indicate in the sketch the location of the display or of another perceptible part of the instrument. 
+ 
+Automatic zero-setting and zero-tracking device is: 
+ Non-existent  Not in operation  Out of working range 
+ 
+ 
+E  = I + ½ e – ΔL – L 
+Ec = E – E0 with E0 = error calculated at or near zero* determined prior to each measurement 
+Location Load, L Indication,  
+I 
+Add. load, 
+ΔL 
+Error, 
+E 
+Corrected 
+error, Ec mpe 
+ *   *   
+1       
+ *   *   
+2       
+ *   *   
+3       
+ *   *   
+4       
+       
+ 
+Check if |E
+c| ≤ |mpe| 
+ 
+ Passed  Failed 
+ 
+Remarks: 
+
+=== R76-2 PAGE 16 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+16 
+ 
+5 REPEATABILITY (A.4.10) 
+ 
+Application no.: ………………………………………………….     
+Type designation: ………………………………………………….     
+Date: …………………………………………  At start At max At end  
+Observer: ………………………………………… Temp.:  
+  °C 
+Verification  Rel. h.:    % 
+scale interval, e: ………………………………………… Time:     
+Resolution during test  Bar. pres.:    hPa 
+(smaller than e): ………………………………………… (only class I)    
+ 
+Automatic zero-setting and zero-tracking device is: 
+ 
+ Non-existent  In operation 
+ 
+Load (weighing 1-10)  Load (weighing 11-20)  
+ 
+ 
+E= I + 1/2 e – ΔL – L 
+ 
+ Indication 
+of load, I 
+Add. load, 
+ΔL E  Indication 
+of load, I 
+Add. load, 
+ΔL E 
+1    11    
+2    12    
+3    13    
+4    14    
+5    15    
+6    16    
+7    17    
+8    18    
+9    19    
+10    
+ 
+20    
+ 
+Emax – Emin (weighing 1-10)  Emax – Emin (weighing 11-20)  
+ 
+mpe  mpe  
+ 
+Check if a) E  ≤ mpe (3.6 of R 76-1) 
+ b) Emax – Emin  ≤ absolute value of mpe (3.6.1 of R 76-1) 
+ 
+ 
+ Passed  Failed 
+ 
+Remarks: 
+
+=== R76-2 PAGE 17 ===
+OIML R 76-2: 2007 (E) Report page …./…. 
+ 
+ 
+ 
+ 
+17 
+ 
+6 TIME-DEPENDENCE 
+6.1 Zero return (A.4.11.2) 
+ 
+Application no.: ………………………………………………….     
+Type designation: ………………………………………………….     
+Date: …………………………………………  At start At max At end  
+Observer: ………………………………………… Temp:  
+  °C 
+Verification  Rel. h:    % 
+scale interval, e: ………………………………………… Time:     
+Resolution during test  Bar. pres:    hPa 
+(smaller than e): …………………………………………  (only class I)    
+ 
+ 
+Automatic zero-setting and zero-tracking device is: 
+ Non-existent  Not in operation  Out of working range 
+ 
+ 
+P = I + ½ e – ΔL 
+ 
+Time of reading Load, 
+L0 
+Indication 
+of zero, I0 
+Add. load, 
+ΔL P   
+0 min    P0 =   
+       
+Load during 30 minutes =       
+    Change after 30 minutes: 
+30 min    P30 = |Δ(P30 – P0)| =  
+       
+For multiple range instruments keep instrument unloaded for further 5 minutes:  Change 5 minutes later: 
+35 min    P35 = |Δ(P35 – P30) | =  
+ 
+ 
+Check if a) |Δ(P30 – P0) | ≤ 0.5 e 
+ b) |Δ(P35 – P30) | ≤ e1 (for multiple range instruments only) 
+ 
+ Passed  Failed 
+ 
+Remarks: 
+

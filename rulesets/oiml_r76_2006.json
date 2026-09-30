@@ -1,0 +1,110 @@
+{
+  "ruleset_id": "oiml_r76_2006",
+  "edition": "2006 (E)",
+  "title": "OIML R 76-1: 2006 Non-automatic weighing instruments - Part 1: Metrological and technical requirements",
+  "citation": "OIML R 76-1 Edition 2006 (E), Section 3 and Annex A",
+  "rounding_mode": "ROUND_HALF_UP",
+  "in_service_mpe_multiplier": 2.0,
+  "accuracy_classes": {
+    "I": {
+      "name": "Special Accuracy (Class I)",
+      "classification_intervals": [
+        {
+          "e_min_g": 0.001,
+          "e_max_g": null,
+          "min_capacity_multiplier_e": 100,
+          "n_min": 50000,
+          "n_max": null
+        }
+      ],
+      "mpe_bands_initial": [
+        { "m_min_e": 0, "m_max_e": 50000, "mpe_multiplier_e": 0.5 },
+        { "m_min_e": 50000, "m_max_e": 200000, "mpe_multiplier_e": 1.0 },
+        { "m_min_e": 200000, "m_max_e": null, "mpe_multiplier_e": 1.5 }
+      ]
+    },
+    "II": {
+      "name": "High Accuracy (Class II)",
+      "classification_intervals": [
+        {
+          "e_min_g": 0.001,
+          "e_max_g": 0.05,
+          "min_capacity_multiplier_e": 20,
+          "n_min": 100,
+          "n_max": 100000
+        },
+        {
+          "e_min_g": 0.1,
+          "e_max_g": null,
+          "min_capacity_multiplier_e": 50,
+          "n_min": 5000,
+          "n_max": 100000
+        }
+      ],
+      "mpe_bands_initial": [
+        { "m_min_e": 0, "m_max_e": 5000, "mpe_multiplier_e": 0.5 },
+        { "m_min_e": 5000, "m_max_e": 20000, "mpe_multiplier_e": 1.0 },
+        { "m_min_e": 20000, "m_max_e": 100000, "mpe_multiplier_e": 1.5 }
+      ]
+    },
+    "III": {
+      "name": "Medium Accuracy (Class III)",
+      "classification_intervals": [
+        {
+          "e_min_g": 0.1,
+          "e_max_g": 2.0,
+          "min_capacity_multiplier_e": 20,
+          "n_min": 100,
+          "n_max": 10000
+        },
+        {
+          "e_min_g": 5.0,
+          "e_max_g": null,
+          "min_capacity_multiplier_e": 20,
+          "n_min": 500,
+          "n_max": 10000
+        }
+      ],
+      "mpe_bands_initial": [
+        { "m_min_e": 0, "m_max_e": 500, "mpe_multiplier_e": 0.5 },
+        { "m_min_e": 500, "m_max_e": 2000, "mpe_multiplier_e": 1.0 },
+        { "m_min_e": 2000, "m_max_e": 10000, "mpe_multiplier_e": 1.5 }
+      ]
+    },
+    "IIII": {
+      "name": "Ordinary Accuracy (Class IIII)",
+      "classification_intervals": [
+        {
+          "e_min_g": 5.0,
+          "e_max_g": null,
+          "min_capacity_multiplier_e": 10,
+          "n_min": 100,
+          "n_max": 1000
+        }
+      ],
+      "mpe_bands_initial": [
+        { "m_min_e": 0, "m_max_e": 50, "mpe_multiplier_e": 0.5 },
+        { "m_min_e": 50, "m_max_e": 200, "mpe_multiplier_e": 1.0 },
+        { "m_min_e": 200, "m_max_e": 1000, "mpe_multiplier_e": 1.5 }
+      ]
+    }
+  },
+  "multi_interval_rules": {
+    "min_ratio_max_to_next_e": {
+      "I": 50000,
+      "II": 5000,
+      "III": 500,
+      "IIII": 50
+    }
+  },
+  "eccentricity_rules": {
+    "default_fraction_of_max": "1/3",
+    "points_of_support_fraction_rule": "1/(n-1)"
+  },
+  "repeatability_rules": {
+    "threshold_capacity_kg": 1000.0,
+    "runs_below_threshold": 10,
+    "runs_at_or_above_threshold": 3,
+    "test_load_fractions": [0.5, 1.0]
+  }
+}

@@ -1,0 +1,19 @@
+=== Page 1 ===
+CA_R76_2006 (Ver. 20191211) 
+Capability Annex 
+OIML R 76:2006 
+Class I Class II Class III Class IIII 
+Maximum test 
+capacity 
+(kg) 
+Maximum 
+number of 
+verification scale 
+intervals (Max/e) 
+Minimum 
+verification scale 
+intervals 
+(g) 
+R
+estrictions: 
+

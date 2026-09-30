@@ -1,0 +1,190 @@
+=== Page 1 ===
+ 
+O I M L  C e r t i f i c a t e  
+ 
+OIML Member State 
+The Netherlands 
+Number R76/2006-A-NL1-20.50 revision 2 
+Project number 3842173 
+Page 1 of 3 
+ 
+Issuing Authority 
+ 
+NMi Certin B.V., OIML Issuing Authority NL1 
+8 August 2024 
+ 
+Certification Board 
+ 
+NMi Certin B.V. 
+Thijsseweg 11 
+2629 JA Delft 
+The Netherlands 
+T +31 88 6362332 
+certin@nmi.nl 
+www.nmi.nl  
+This document is issued under the 
+provision that no liability is 
+accepted and that the applicant 
+shall indemnify third-party liability. 
+ 
+The notification of NMi Certin B.V. 
+as Issuing Authority can be verified 
+at www.oiml.org 
+This document is digitally 
+signed and sealed. The 
+digital signature can be 
+verified in the blue 
+ribbon on top of the 
+electronic version of this 
+certificate.   
+ 
+ 
+Issuing authority NMi Certin B.V. 
+Person responsible: M.Ph.D. Schmidt 
+Applicant and  
+Manufacturer 
+Dibal S.A. 
+Astintze 26  
+48160 Derio 
+Spain 
+Identification of the 
+certified type 
+A Non-automatic weighing instrument  
+Type : CS Series 
+Characteristics See next page 
+  
+This OIML Certificate is issued under scheme A. 
+ 
+This Certificate attests the conformity of the above identified Type (represented by the sample(s) 
+identified in the OIML Test Report) with the requirements of the following Recommendation of the 
+International Organization of Legal Metrology (OIML): 
+ 
+OIML R 76-1:2006 for accuracy class 
+II I   
+This Certificate relates only to the metrological and technical characteristics of the type of measuring 
+instrument covered by the relevant OIML International Recommendation above-identified. 
+This Certificate does not bestow any form of legal international approval. 
+ 
+Important note: Apart from the mention of the Certificate’s reference number and the name of the 
+OIML Member State in which the Certificate was issued, partial quotation of the Certificate and of 
+the associated OIML Test Report(s) is not permitted, although either may be reproduced in full. 
+ 
+  
+
+=== Page 2 ===
+ 
+O I M L  C e r t i f i c a t e  
+OIML Member State 
+The Netherlands 
+Number R76/2006-A-NL1-20.50 revision 2 
+Project number 3842173 
+Page 2 of 3 
+ 
+ 
+The conformity was established by the results of tests and examinations provided in the associated 
+reports: 
+ 
+Module Type Report Issue date Pages 
+Indicator CS Series 
+NMi-1902587-01 14 December 2018 53 
+NMi-1902587-02 14 December 2018 12 
+NMi-1902587-03 14 December 2018 12 
+NMi-2431310-01 18 March 2020 12 
+NMi-2532570-01 30 December 2020 13 
+NMi-3700931-01 15 November 2023 12 
+NMi-3700931-02 15 November 2023 22 
+NMi-3779824-01 7 August 2024 20 
+ 
+Load cell 
+L6D NMi-10200947-07 24 December 2020 59 
+NMi-10200947-08 24 December 2020 59 
+LAB… 
+R60/2000-NL1-10.07 17 May 2010 40 
+NMi-12200582-01 23 August 2013 52 
+NMi-3534839-01 29 November 2022 51 
+ 
+Characteristics of the non-automatic weighing instrument: 
+ 
+Accuracy class  
+Maximum capacity 6 kg  Max  100 kg 
+Verification scale interval e  2 g 
+Weighing ranges 
+Single interval 
+Multi-interval 
+Multiple range 
+Maximum number of scale intervals 
+(one weighing range) n  6000  
+Maximum number of scale intervals 
+(multi-interval) 
+n  3000  
+(per partial weighing range) 
+Maximum number of  
+partial weighing ranges 2 
+Maximum number of scale intervals 
+(multiple range) 
+n  3000  
+(per weighing range) 
+Maximum number of weighing ranges 2 
+Tare 
+Tare ≤ -Max + e for single interval  
+Tare ≤ -Max1 + e1 for multi-interval and multiple 
+range instruments 
+Load cell excitation voltage 5 V DC 
+Minimum input voltage per verification scale 
+interval 1 µV 
+Minimum load cell resistance 300  
+II I
+
+=== Page 3 ===
+ 
+O I M L  C e r t i f i c a t e  
+OIML Member State 
+The Netherlands 
+Number R76/2006-A-NL1-20.50 revision 2 
+Project number 3842173 
+Page 3 of 3 
+ 
+ 
+Maximum load cell resistance 500  
+Load cell connection 4-wire 
+Temperature range 0 °C / 40 °C 
+Power supply voltage 110 – 230 V AC 50/60 Hz 
+Application 
+ Intended to be used for direct sales to the public 
+Software 
+identification 
+Weighing CPU Firmware Version : 2.0.3 
+PC Software checksums 
+PHP : F244B8F0 
+JPOS : ADD09326 
+Net: 2ADDCC7C 
+Software: 
+-     The software identification is displayed permanently in the weighing window by the software, or 
+it is displayed when the text “Version”, located in the weighing window, is pressed. 
+- The instrument has loadable software. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Revision History 
+ 
+This revision replaces the previous versions. 
+ 
+Revision Date Change(s) 
+0 2020-12-30 Initial issue. 
+1 2024-02-13 Addition of reports. 
+2 2024-08-07 Addition of reports and changes in table of characteristics. 
+ 
+
